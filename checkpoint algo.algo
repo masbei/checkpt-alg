@@ -1,0 +1,20 @@
+ALGORITHM sentence
+VAR
+    nbr_char:INTEGER:=0
+    nbr_words:INTEGER:=0
+    nbr_vow:INTEGER:=0
+    c:CHAR
+BEGIN
+    WHILE (c<>".") DO
+        read(c)
+        nbr_char:=nbr_char+1;
+    
+    IF (c="") THEN
+        nbr_words:=nbr_words+1;
+    ELSE (c="a" and c="e" and c="i" and c="y" and c="u") THEN
+        nbr_vow:=nbr_vow+1;
+    
+        
+    END_IF
+    END_WHILE
+END
